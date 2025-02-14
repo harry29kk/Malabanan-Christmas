@@ -468,51 +468,49 @@ img {
 }
 
 /* DECORATIONS */
-.decoration {
-  margin-top: 10rem;
-  padding-top: 5rem;
+.decor {
+  padding: 5rem 0;
 }
-.decoration__wrapper {
+.decor__wrapper {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 }
-.decoration__left small {
-  font-size: 1.4em;
+.decor__left small {
+  font-size: 1.4rem;
   color: var(--clr-secondary);
-  font-weight: 10;
-  margin-top: 100rem;
+  font-weight: 500;
 }
-.decoration__left h2 {
-  font-size: var(--h2);
+.decor__left {
+  border-right: 1px solid rgb(43, 43, 43, 0.1);
+  padding-right: 5rem;
+}
+.decor__left img {
+  border-bottom: 4px solid var(--clr-secondary);
+  margin-bottom: 1rem;
+}
+.decor__details small {
   color: var(--clr-primary);
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.decor__details p {
+  color: var(--clr-primary);
+}
+.decor__title h4 {
+  font-size: var(--h4);
   font-family: var(--font-secondary);
-  max-width: 50rem;
-  line-height: 10rem 0;
-  padding: 1.3rem 0;
+  color: var(--clr-primary);
 }
-.decoration__left p > span {
-  margin-top: 5rem;
+.decor__title {
+  margin-bottom: 3rem;
 }
-.decoration__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  padding: 5rem 0;
-}
-.decoration__right {
-  margin-top: 5rem;
-}
-.decoration__right h4 {
+.decor__right h4 {
   font-size: var(--h4);
   margin-bottom: 2rem;
   color: var(--clr-primary);
 }
-.decoration__left {
-  border-right: 1px solid rgb(43, 43, 43, 0.1);
-  padding-right: 5rem;
-}
-
 /* FOOTER */
 .footer {
   background-color: var(--clr-secondary);
@@ -535,23 +533,23 @@ img {
   border-radius: 50%;
   font-size: 1.3rem;
 }
-.footer__top span{
+.footer__top span {
   text-decoration: underline;
   text-transform: uppercase;
 }
-.footer__bottom{
+.footer__bottom {
   display: flex;
   gap: 5rem;
 }
-.footer__bottom ul:first-child{
+.footer__bottom ul:first-child {
   max-width: 40rem;
 }
-  .footer__bottom--a,
- .footer__bottom--b{
+.footer__bottom--a,
+.footer__bottom--b {
   display: flex;
   gap: 5rem;
 }
-.footer__bottom ul li a{
+.footer__bottom ul li a {
   color: var(--clr-light);
   text-decoration: underline;
 }
